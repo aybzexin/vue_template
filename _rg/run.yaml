@@ -111,7 +111,7 @@ _env:
         _mix     : "_online,_local_deploy,base"
 _sys:
     -  !R.system
-        _name : "order"
+        _name : "vueTemplate"
         _res  :
             - !R.vars
                 SOCK_FILE   : "${RUN_PATH}/fpm.sock"
