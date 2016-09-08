@@ -1,0 +1,8 @@
+_dev:
+    - !C.project
+        name : "web_order"
+        root : "${HOME}/devspace/vue_template"
+    - !C.version
+        file : "version.txt"
+    - !C.git
+        remote : "git@github.com:ayibang/vue_template.git"

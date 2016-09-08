@@ -1,0 +1,10 @@
+{
+    "ENV"             : "dev",
+    "UC_API_URL"      : "http://uc.demo.ayibang.cn/",
+    "UC_WEB_URL"      : "http://uc.demo.ayibang.cn/",
+    "BASE_API_URL"    : "http://api.opera.base.demo.ayibang.cn/v1/",
+    "API_URL"         : "http://api.opera.baojie.demo.ayibang.cn/v1/",
+    "ZENGZHI_API_URL"     : "http://api.opera.zengzhi.demo.ayibang.cn/v1/",
+    "APPKEY"          : "OC_RCBJ",
+    "ENTRY_FILE_NAME" : "index_dev"
+}
