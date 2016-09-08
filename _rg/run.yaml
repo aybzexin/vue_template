@@ -63,7 +63,7 @@ _env:
         _res :
             - !R.vars
                 ENV         : "dev"
-                BASE_DOMAIN : "${USER}.dev.ayibang.cn"
+                BASE_DOMAIN : "${USER}.dev.vue.ayibang.cn"
                 PHP_ERROR   : "E_ALL & ~E_NOTICE"
                 UC_API_URL   : "http://uc.demo.ayibang.cn/"
                 UC_WEB_URL   : "http://uc.demo.ayibang.cn/"
@@ -116,12 +116,12 @@ _sys:
             - !R.vars
                 SOCK_FILE   : "${RUN_PATH}/fpm.sock"
                 PHP_INCLUDE : "${PRJ_ROOT}/src"
-                DOMAIN      : "order.${BASE_DOMAIN}"
+                DOMAIN      : "common.${BASE_DOMAIN}"
 
             - !R.file_tpl
                 tpl : "${PRJ_ROOT}/conf/options/config.json"
                 dst : "${PRJ_ROOT}/conf/used/config.json"
             - !R.nginx_conf
                 tpl :  "${PRJ_ROOT}/conf/options/vue_template.conf"
-                src :  "${PRJ_ROOT}/conf/used/vue_template.conf"
+                src :  "${PRJ_ROOT}/conf/used/vue_tempate.conf"
                 sudo :  true
