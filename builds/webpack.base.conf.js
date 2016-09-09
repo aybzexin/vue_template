@@ -1,6 +1,9 @@
 var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var pro = require('process');
+
+
 
 
 var plugins = [
@@ -14,9 +17,9 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, '../dist/'),
-    publicPath: '',//cdn
-    chunkFilename : '/vendor/js/[name].js',
-    filename: '/vendor/js/[name].js'
+    publicPath: pro.argv.splice(2)[0] === 'cdn' ? 'http://s1.ayibang.com/static/' : '',//cdn
+    chunkFilename : '/vuecommon/js/[name].js',
+    filename: '/vuecommon/js/[name].js'
   },
   resolveLoader: {
     root: path.join(__dirname, 'node_modules'),
@@ -54,7 +57,7 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 100000,
-          name: 'vendor/img/[name]-[hash:8].[ext]'
+          name: 'vuecommon/img/[name]-[hash:8].[ext]'
         }
       }
     ]

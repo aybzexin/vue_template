@@ -10,9 +10,8 @@ config.entry = {
     app :['./src/main.js'],
     vendor :['webpack_zepto','vue','vue-router'],
 };
-config.output.filename = 'vendor/js/[name].[chunkhash:8].js'
-config.output.chunkFilename = 'vendor/js/[name].[chunkhash:8].js'
-config.output.publicPath ='/';
+config.output.filename = 'vuecommon/js/[name].[chunkhash:8].js'
+config.output.chunkFilename = 'vuecommon/js/[name].[chunkhash:8].js'
 
 
 SOURCE_MAP = false;
@@ -45,7 +44,7 @@ config.plugins = (config.plugins || []).concat([
             warnings: false
         }
     }),
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor/js/vendor-[chunkhash:8].js'),
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vuecommon/js/vendor-[chunkhash:8].js'),
     new webpack.optimize.CommonsChunkPlugin(
             {
                 name : 'app',
@@ -53,7 +52,7 @@ config.plugins = (config.plugins || []).concat([
                 minChunks : 2,//提取公共模块
             }
     ),
-    new ExtractTextPlugin('vendor/css/[name].[contenthash].css'),
+    new ExtractTextPlugin('vuecommon/css/[name].[contenthash].css'),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new HtmlWebpackPlugin({

@@ -6,3 +6,4 @@ node_modules
 _rg/.*.data
 conf/used/
 run/*
+.idea/
