@@ -63,7 +63,7 @@ _env:
         _res :
             - !R.vars
                 ENV         : "dev"
-                BASE_DOMAIN : "${USER}.dev.vue.ayibang.cn"
+                BASE_DOMAIN : "${USER}.dev.ayibang.cn"
                 PHP_ERROR   : "E_ALL & ~E_NOTICE"
                 UC_API_URL   : "http://uc.demo.ayibang.cn/"
                 UC_WEB_URL   : "http://uc.demo.ayibang.cn/"
@@ -116,7 +116,7 @@ _sys:
             - !R.vars
                 SOCK_FILE   : "${RUN_PATH}/fpm.sock"
                 PHP_INCLUDE : "${PRJ_ROOT}/src"
-                DOMAIN      : "common.${BASE_DOMAIN}"
+                DOMAIN      : "vuet.${BASE_DOMAIN}"
 
             - !R.file_tpl
                 tpl : "${PRJ_ROOT}/conf/options/config.json"

@@ -4,7 +4,7 @@
   "author": "zhonglingxiao <824665478@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0 ---progress --config builds/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --hot --host 123.57.13.169 --port 88789  ---progress --config builds/webpack.dev.conf.js",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules  --config builds/webpack.prod.conf.js",
     "demo": "cross-env NODE_ENV=production webpack --progress --hide-modules  --config builds/webpack.demo.conf.js",
     "pub": "scp -r dist/index.html wangzexin@10.172.225.119:~/devspace/ayibang_wap/src/web_channel/statics/tpls/common/ && scp -r dist/vendor/ wangzexin@10.172.225.119:~/devspace/ayibang_wap/src/web_channel/statics"
