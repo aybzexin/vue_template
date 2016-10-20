@@ -83,7 +83,7 @@ config.plugins = (config.plugins || []).concat([
                 activityImgUrl:"http://activity.demo.ayibang.com/2016/memberapp/?city=",
                 goodsScode :"AYB_GOODS",
                 isDemo : true,
-                Q_openid : "<? echo $openid ?>",
+	            isConsoleAjax:true
 
             }
         }

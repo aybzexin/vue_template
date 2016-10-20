@@ -39,7 +39,7 @@ config.plugins = (config.plugins || []).concat([
                 defaultCity : {name:"大连",pinyin:"dalian"},
                 goodsScode :"AYB_GOODS",
                 isDemo : true,
-                Q_openid : "<?php echo $openid ?>",
+	            isConsoleAjax:false
 
             }
         }

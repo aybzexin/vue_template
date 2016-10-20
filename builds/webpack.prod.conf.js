@@ -81,7 +81,8 @@ config.plugins = (config.plugins || []).concat([
                 defaultCity : {name:"北京",pinyin:"beijing"},
                 activityImgUrl:"http://activity.ayibang.com/2016/memberapp/?city=",
                 goodsScode :"AYB_GOODS",
-                isDemo : false
+                isDemo : false,
+	            isConsoleAjax:false
 
             }
         }
