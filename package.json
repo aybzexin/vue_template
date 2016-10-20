@@ -4,7 +4,7 @@
   "author": "zhonglingxiao <824665478@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot  --progress --config builds/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0 ---progress --config builds/webpack.dev.conf.js",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules  --config builds/webpack.prod.conf.js",
      "cdn": "cross-env NODE_ENV=production webpack cdn --progress --hide-modules  --config builds/webpack.prod.conf.js ",
     "demo": "cross-env NODE_ENV=production webpack --progress --hide-modules  --config builds/webpack.demo.conf.js",
